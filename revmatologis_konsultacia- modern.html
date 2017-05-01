@@ -1,0 +1,604 @@
+<html>
+
+<head>
+<title>  </title>
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+function fitToContent(id, maxHeight)
+{
+	var text = id && id.style ? id : document.getElementById(id);
+	if ( !text ) return;
+	text.style.height = "36px";
+	var adjustedHeight = text.clientHeight;
+	if ( !maxHeight || maxHeight > adjustedHeight )
+	{
+		adjustedHeight = Math.max(text.scrollHeight, adjustedHeight);
+		if ( maxHeight )
+			adjustedHeight = Math.min(maxHeight, adjustedHeight);
+		if ( adjustedHeight > text.clientHeight )
+			text.style.height = adjustedHeight + "px";
+	}
+}
+
+window.onload = function() {
+	var textareas = document.getElementsByTagName("textarea");
+	for(var ta in textareas)
+		if(typeof textareas[ta].autoResize != "undefined"){
+			textareas[ta].onkeyup=function(){fitToContent(this,500)};
+			textareas[ta].onkeypress=function(){fitToContent(this,500)};
+		}
+}
+</script>
+
+
+<style type="text/css">
+.bold_20  { font-size:20px;  font-weight:bold }
+.bold_18  { font-size:18px;  font-weight:bold }
+.bold_16  { font-size:16px;  font-weight:bold }
+.bold_15  { font-size:15px;  font-weight:bold }
+.bold_14  { font-size:14px;  font-weight:bold }
+.bold_13  { font-size:13px;  font-weight:bold }
+.bold_12  { font-size:12px;  font-weight:bold }
+.bold_11  { font-size:11px;  font-weight:bold }
+.bold_10  { font-size:10px;  font-weight:bold }
+
+.normal_16    { font-size:16px; font-weight:normal }
+.normal_15    { font-size:15px; font-weight:normal }
+.normal_14    { font-size:14px; font-weight:normal }
+.normal_13    { font-size:13px; font-weight:normal }
+.normal_12    { font-size:12px; font-weight:normal }
+.normal_11    { font-size:11px; font-weight:normal }
+.normal_10    { font-size:10px; font-weight:normal }
+.normal_9    { font-size:9px; font-weight:normal }
+
+</style>
+
+</head>
+
+<body bgcolor="#f0f0f0">
+
+<form method="post" action="" enctype="text/plain">
+
+<table border="0" width="680" bgcolor="#d5eaff" align="center">
+
+	<tr>
+		<td class="normal_14" class="no-print" colspan="2" bgcolor="#ff8a8a" align="left">
+
+	<p class="no-print" >	<u> <strong>ექიმების საყურადღებოდ!!!</strong></u> <br/>
+		  ისტორიის შევსებისას <strong>აუცილებელია წითელი ვარსკვლავებით მონიშნული ველების შევსება!</strong><br/>
+		  ეს ველები ეკუთვნის ფორმა 25-ს და კორექტულად შევსების შემთხვევაში ავტომატურად აიტვირთება პორტალზე.<br/>
+		   &nbsp;<br/>
+		  განსაკუთრებით მნიშვნელოვანია შემდეგი 4 ველის შევსება: <br/>
+		  <b>1) შემთხვევის ტიპი; <br/>
+		 2)	მომართვის ძირითადი მიზეზის, ჩივილის ICPC2 კოდი  (აქ უნდა ჩაიწეროს მხოლოდ 1 კოდი !!!); <br/>
+		 3) ძირითადი დაავადების ICD_10 კოდი; <br/>
+		 4) სიცოცხლეში პირველად დადგენილი დაავადების ხასიათი; <br/></b>
+		 &nbsp;<br/>
+		ასევე აუცილებელია <u><strong>პაციენტის პირადი ნომრის დაფიქსირება რეგისტრატურაში</strong></u> და ექიმის მიერ ისტორიის დადასტურება ანუ <u><strong>კონფირმაცია</strong></u>! <br/>
+		 &nbsp;<br/>
+		 თუ პაციენტს არ აღენიშნება ტრავმა ან ძირითადი დაავადების გართულებები, შესაბამისი ველები <strong>"ტრავმის შემთხვევაში გარეგანი მიზეზი"</strong> და <strong>"გართულებები"</strong> უნდა დარჩეს ცარიელი,
+		  ანუ არ უნდა ჩაიწეროს ამ ველებში <strong>"არა", "არ აღინიშნება", "არ აღნიშნავს" </strong> და ა.შ., <br/>
+		&nbsp;<br/>
+		 გთხოვთ გაითვალისწინოთ,<br/> <strong>ჩამოთვლილი პირობების დაცვის გარეშე ინფორმაცია პორტალზე არ აიტვირთება !!! </strong> <br/>
+		 &nbsp;<br/>
+		  &nbsp;<br/>
+		<strong>ისტორიაში დამატებულია ახალი გრაფა "რეცეპტის გამოწერა"; <br/> გთხოვთ ადმაინისტრაციისგან მითითების გარეშე ჯერჯერობით ნუ შეავსებთ ამ გრაფებს!!!</strong>
+		 &nbsp;<br/>
+		  &nbsp;<br/>
+
+
+
+		 ეს ინფორმაცია განკუთვნილია მხოლოდ ეკრანზე გამოსატანად და არ უნდა დაიბეჭდის ისტორიასთან ერთად (გთხოვთ ისტორიების შესავსებად გამოიყენოთ მხოლოდ Internet Explorer-ი).
+		 </p>
+
+		 </td>
+	</tr>
+
+
+
+<tr> <td>
+<img src="IMG\blanki_Tbilisi_a4.gif" width="675" height="89"/>
+</td> </tr>
+
+
+
+
+
+<tr> <td>
+			<div my-print="recipe">
+<table border="5" bordercolor="#000000" rules="none" align="center">
+	<tr align="center">
+		<td> <input type="text" name="pacientis_gvari" id="pacientis_gvari" size="26"  field-recipe="PatientLastName" align="middle" class="bold_18"> </td>
+		<td> <input type="text" name="pacientis_saxeli" id="pacientis_saxeli" field-recipe="PatientFirstName" size="18" class="bold_18"> </td>
+		<td> <input type="text" name="asaki" id="asaki" field-recipe="PatientAge" size="2" class="bold_13"> </td>
+		<td> <input type="text" name="pacientis_piradi_N" id="pacientis_piradi_N" size="16" field-recipe="PatientPId" class="bold_13"> </td>
+	</tr>
+	<tr class="normal_9" align="left">
+		<td> პაციენტის გვარი: </td>
+		<td> სახელი: </td>
+		<td> ასაკი </td>
+		<td> პირადი N </td>
+	</tr>
+</table>
+			</div>
+</td> </tr>
+
+
+
+<tr> <td>
+	<table border="0" width="100%" bordercolor="#000000" class="normal_15">
+		<tr>
+			<td> პაც. ტელ. ნომერი <input type="text" name="pacientis_tel_nomeri" id="pacientis_tel_nomeri" size="9" align="middle" class="bold_12"> </td>
+			<td> რეგისტრაციის № <input type="data" name="registraciis_N" id="registraciis_N" maxlength="11" size="10" class="bold_12"> </td>
+			<td align="right"> თარიღი <input type="date" name="TariRi" id="TariRi" size="9" align="middle" class="bold_12"> </td>
+		</tr>
+	</table>
+</td> </tr>
+
+
+
+
+
+<tr> <td align="center" >
+<hr noshade size=1 width=680>
+</td> </tr>
+
+
+<tr> <td class="bold_18" align="center">
+	რევმატოლოგის კონსულტაცია
+</td> </tr>
+
+<tr> <td class="bold_18" align="right">
+	კოდი <input type="text" name="kodi" id="kodi" maxlength="15" size="10" class="bold_12"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	ICD კოდი <input type="text" name="ICD_kodi" id="CD_kodi" maxlength="15" size="10" class="bold_12">
+	<br/>&nbsp;
+</td> </tr>
+
+
+
+
+<tr> <td class="normal_13">
+პაც.სქესი:
+<select name="pacientis_sqesi" id="pacientis_sqesi" class="bold_13">
+<option value="- - -"> - - - </option>
+<option value="mamrobiTi"> მამრობითი </option>
+<option value="mdedrobiTi"> მდედრობითი </option>
+</select>
+&nbsp;
+ოჯახ.მდგომ.:
+<select name="ojaxuri_mdgomareoba" id="ojaxuri_mdgomareoba" class="bold_13">
+<option value="ojaxuri_mdgomareoba - - -"> - - - </option>
+<option value="dasaojaxebeli"> დასაოჯახებელი </option>
+<option value="daojaxebuli"> დაოჯახებული </option>
+<option value="ganqorwinebuli"> განქორწინებული </option>
+<option value="qvrivi"> ქვრივი </option>
+</select>
+&nbsp;
+შემთხვევის ტიპი: <font color="#ff0000" class="bold_20"> * </font>
+<select name="SemTxvevis_tipi" id="SemTxvevis_tipi" class="bold_13">
+<option value=""></option>
+<option value="gegmiuri"> გეგმიური </option>
+<option value="gadaudebeli"> გადაუდებელი </option>
+</select>
+</td> </tr>
+
+<tr> <td class="bold_13">
+პროფესია, სამუშაო ადგილი და თანამდებობა: <font color="#0B3AF9" class="bold_20"> * </font>  <br/>
+<input type="text" name="profesia" id="profesia" size="100" class="normal_14">
+</td> </tr>
+
+<tr> <td class="bold_13">
+მომართვის ძირითადი მიზეზის, ჩივილის ICPC2 კოდი: <font color="#ff0000" class="bold_20"> * </font>
+<textarea  requird="" classifierid="10" classifiersuffix="_"  name="momarTvis_mizezi_ICPC2_kodi" cols="10" rows="1" class="bold_14" id="momarTvis_mizezi_ICPC2_kodi"></textarea> <br>
+მომართვის ძირითადი მიზეზი, ჩივილი:  <font color="#ff0000" class="bold_20"> * </font> <br>
+<textarea classifiername="10" name="momarTvis_mizezi" id="momarTvis_mizezi" cols="77" rows="1" autoResize style="overflow:hidden" class="normal_14" > </textarea>
+</td> </tr>
+
+<tr> <td class="bold_13">
+მომართვის სხვა მიზეზები, ჩივილები:  <br>
+<textarea name="momarTvis_sxva_mizezi" id="momarTvis_sxva_mizezi" cols="77" rows="1" autoResize style="overflow:hidden" class="normal_14" > </textarea>
+</td> </tr>
+
+<tr> <td class="bold_13">
+დაავადების ანამნეზი: <font color="#0B3AF9" class="bold_20"> * </font> <br>
+<textarea name="daavadebis_anamnezi" id="daavadebis_anamnezi" cols="77" rows="1" autoResize style="overflow:hidden" class="normal_14" > </textarea>
+</td> </tr>
+
+<tr> <td class="bold_13">
+გადატანილი დაავადებები: <font color="#0B3AF9" class="bold_20"> * </font> <br>
+<textarea name="gadatanili_daavadebebi" id="gadatanili_daavadebebi" cols="77" rows="1" autoResize style="overflow:hidden" class="normal_14" > </textarea>
+</td> </tr>
+
+<tr> <td class="bold_13">
+ტრავმის შემთხვევაში გარეგანი მიზეზის ICD_10 კოდი: <font color="#ff0000" class="bold_20"> * </font>
+<input classifierid="1" type="text" name="travmis_SemTxvevaSi_garegani_mizezis_ICD10_kodi" id="travmis_SemTxvevaSi_garegani_mizezis_ICD10_kodi" size="43" class="normal_14">
+</td> </tr>
+
+<tr> <td class="bold_13">
+ტრავმის შემთხვევაში გარეგანი მიზეზი: <font color="#ff0000" class="bold_20"> * </font> <br>
+<textarea classifiername="1" name="travmis_SemTxvevaSi_garegani_mizezi" id="travmis_SemTxvevaSi_garegani_mizezi" cols="77" rows="1" autoResize style="overflow:hidden" class="normal_14" > </textarea>
+</td> </tr>
+
+<tr> <td class="bold_10" align="right">
+&nbsp;<br/>
+ვადასტურებ ექიმისთვის მიწოდებულ ინფორმაციას ---------------------------------------------  <br>
+<font class="normal_9"> პაციენტის ხელმოწერა </font> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+</td> </tr>
+
+
+
+<tr> <td align="center" >
+<hr noshade size=1 width=680>
+</td> </tr>
+
+
+
+
+
+
+
+
+
+<tr> <td>
+	<table  class="normal_15" border="0">
+
+
+<tr valign="top">
+	<td  valign="top" class="bold_15" >
+	ობიექტურად: <br/>
+	<textarea name="obieqturad" id="obieqturad" cols="72" rows="1" autoResize style="overflow:hidden" class="normal_15"> </textarea> </td>
+</tr>
+
+
+<tr valign="top">
+	<td  valign="top" class="bold_15" >
+	წინასწარი დიაგნოზი: <br/>
+	<textarea name="winaswari_diagnozi" id="winaswari_diagnozi" cols="72" rows="1" autoResize style="overflow:hidden" class="normal_15"> </textarea> </td>
+</tr>
+
+
+
+<tr valign="top">
+	<td  valign="top" class="bold_15" >
+	კლინიკური დიაგნოზი: <br/>
+	<textarea name="klinikuri_diagnozi" id="klinikuri_diagnozi" cols="72" rows="1" autoResize style="overflow:hidden" class="normal_15"> </textarea> </td>
+</tr>
+
+
+<tr> <td valign="top" class="normal_15">
+<b> დანიშნული გამოკვლევები: </b> <br>
+
+<table border="0" width="100%">
+	<tr>
+		<td>	<select name="daniSnuli_gamokvlevebi1" id="daniSnuli_gamokvlevebi1" class="bold_12">
+				<option value="daniSnuli_gamokvlevebi1–––"> - - - </option>
+				<option value="usg_muxlis_saxsrebis"> უსგ–მუხლის სახსრების </option>
+				<option value="sisxlis_saerTo_analizi"> სისხლის საერთო ანალიზი </option>
+				<option value="C_reaqtiuli_cila"> C-რეაქტიული ცილა </option>
+				<option value="antistreptolizini-O"> ანტისტრეპტოლიზინი-O </option>
+				<option value="revmatoiduli_faqtori"> რევმატოიდული ფაქტორი </option>
+				<option value="SardmJava_sisxlSi"> შარდმჟავა სისხლში </option>
+				<option value="kreatinini_sisxlS"> კრეატინინი სისხლში </option>
+				<option value="koagulograma"> კოაგულოგრამა </option>
+				<option value="glukoza_sisxlSi_(uzmod"> გლუკოზა სისხლში (უზმოდ) </option>
+				<option value="RviZlis_funqciuri_sinjebi"> ღვიძის ფუნქციული სინჯები </option>
+				<option value="transaminazebi"> ტრანსამინაზები </option>
+				<option value="antisxeulebi_kardiolipinalis"> ანტისხ. ტიტრი კარდიოლიპინალის მიმართ </option>
+				<option value="antisxeulebi_qlamidiebis"> ანტისხ. ტიტრი ქლამიდიების მიმართ </option>
+				<option value="Sardis_saerTo"> შარდის საერთო </option>
+				<option value="sklerodermia_70"> სკლეროდერმია 70 </option>
+				<option value="ANA"> ANA </option>
+				<option value="anti_ds_DNA"> anti ds DNA </option>
+				<option value="anti_CCP"> anti CCP </option>
+				</select> </td>
+
+		<td>	<select name="daniSnuli_gamokvlevebi2" id="daniSnuli_gamokvlevebi2" class="bold_12">
+				<option value="daniSnuli_gamokvlevebi2–––"> - - - </option>
+				<option value="usg_muxlis_saxsrebis"> უსგ–მუხლის სახსრების </option>
+				<option value="sisxlis_saerTo_analizi"> სისხლის საერთო ანალიზი </option>
+				<option value="C_reaqtiuli_cila"> C-რეაქტიული ცილა </option>
+				<option value="antistreptolizini-O"> ანტისტრეპტოლიზინი-O </option>
+				<option value="revmatoiduli_faqtori"> რევმატოიდული ფაქტორი </option>
+				<option value="SardmJava_sisxlSi"> შარდმჟავა სისხლში </option>
+				<option value="kreatinini_sisxlS"> კრეატინინი სისხლში </option>
+				<option value="koagulograma"> კოაგულოგრამა </option>
+				<option value="glukoza_sisxlSi_(uzmod"> გლუკოზა სისხლში (უზმოდ) </option>
+				<option value="RviZlis_funqciuri_sinjebi"> ღვიძის ფუნქციული სინჯები </option>
+				<option value="transaminazebi"> ტრანსამინაზები </option>
+				<option value="antisxeulebi_kardiolipinalis"> ანტისხ. ტიტრი კარდიოლიპინალის მიმართ </option>
+				<option value="antisxeulebi_qlamidiebis"> ანტისხ. ტიტრი ქლამიდიების მიმართ </option>
+				<option value="Sardis_saerTo"> შარდის საერთო </option>
+				<option value="sklerodermia_70"> სკლეროდერმია 70 </option>
+				<option value="ANA"> ANA </option>
+				<option value="anti_ds_DNA"> anti ds DNA </option>
+				<option value="anti_CCP"> anti CCP </option>
+				</select> </td>
+	</tr>
+	<tr>
+		<td>	<select name="daniSnuli_gamokvlevebi3" id="daniSnuli_gamokvlevebi3" class="bold_12">
+				<option value="daniSnuli_gamokvlevebi3–––"> - - - </option>
+				<option value="usg_muxlis_saxsrebis"> უსგ–მუხლის სახსრების </option>
+				<option value="sisxlis_saerTo_analizi"> სისხლის საერთო ანალიზი </option>
+				<option value="C_reaqtiuli_cila"> C-რეაქტიული ცილა </option>
+				<option value="antistreptolizini-O"> ანტისტრეპტოლიზინი-O </option>
+				<option value="revmatoiduli_faqtori"> რევმატოიდული ფაქტორი </option>
+				<option value="SardmJava_sisxlSi"> შარდმჟავა სისხლში </option>
+				<option value="kreatinini_sisxlS"> კრეატინინი სისხლში </option>
+				<option value="koagulograma"> კოაგულოგრამა </option>
+				<option value="glukoza_sisxlSi_(uzmod"> გლუკოზა სისხლში (უზმოდ) </option>
+				<option value="RviZlis_funqciuri_sinjebi"> ღვიძის ფუნქციული სინჯები </option>
+				<option value="transaminazebi"> ტრანსამინაზები </option>
+				<option value="antisxeulebi_kardiolipinalis"> ანტისხ. ტიტრი კარდიოლიპინალის მიმართ </option>
+				<option value="antisxeulebi_qlamidiebis"> ანტისხ. ტიტრი ქლამიდიების მიმართ </option>
+				<option value="Sardis_saerTo"> შარდის საერთო </option>
+				<option value="sklerodermia_70"> სკლეროდერმია 70 </option>
+				<option value="ANA"> ANA </option>
+				<option value="anti_ds_DNA"> anti ds DNA </option>
+				<option value="anti_CCP"> anti CCP </option>
+				</select> </td>
+
+		<td>	<select name="daniSnuli_gamokvlevebi4" id="daniSnuli_gamokvlevebi4" class="bold_12">
+				<option value="daniSnuli_gamokvlevebi4–––"> - - - </option>
+				<option value="usg_muxlis_saxsrebis"> უსგ–მუხლის სახსრების </option>
+				<option value="sisxlis_saerTo_analizi"> სისხლის საერთო ანალიზი </option>
+				<option value="C_reaqtiuli_cila"> C-რეაქტიული ცილა </option>
+				<option value="antistreptolizini-O"> ანტისტრეპტოლიზინი-O </option>
+				<option value="revmatoiduli_faqtori"> რევმატოიდული ფაქტორი </option>
+				<option value="SardmJava_sisxlSi"> შარდმჟავა სისხლში </option>
+				<option value="kreatinini_sisxlS"> კრეატინინი სისხლში </option>
+				<option value="koagulograma"> კოაგულოგრამა </option>
+				<option value="glukoza_sisxlSi_(uzmod"> გლუკოზა სისხლში (უზმოდ) </option>
+				<option value="RviZlis_funqciuri_sinjebi"> ღვიძის ფუნქციული სინჯები </option>
+				<option value="transaminazebi"> ტრანსამინაზები </option>
+				<option value="antisxeulebi_kardiolipinalis"> ანტისხ. ტიტრი კარდიოლიპინალის მიმართ </option>
+				<option value="antisxeulebi_qlamidiebis"> ანტისხ. ტიტრი ქლამიდიების მიმართ </option>
+				<option value="Sardis_saerTo"> შარდის საერთო </option>
+				<option value="sklerodermia_70"> სკლეროდერმია 70 </option>
+				<option value="ANA"> ANA </option>
+				<option value="anti_ds_DNA"> anti ds DNA </option>
+				<option value="anti_CCP"> anti CCP </option>
+				</select> </td>
+	</tr>
+		<tr>
+		<td>	<select name="daniSnuli_gamokvlevebi5" id="daniSnuli_gamokvlevebi5" class="bold_12">
+				<option value="daniSnuli_gamokvlevebi5–––"> - - - </option>
+				<option value="usg_muxlis_saxsrebis"> უსგ–მუხლის სახსრების </option>
+				<option value="sisxlis_saerTo_analizi"> სისხლის საერთო ანალიზი </option>
+				<option value="C_reaqtiuli_cila"> C-რეაქტიული ცილა </option>
+				<option value="antistreptolizini-O"> ანტისტრეპტოლიზინი-O </option>
+				<option value="revmatoiduli_faqtori"> რევმატოიდული ფაქტორი </option>
+				<option value="SardmJava_sisxlSi"> შარდმჟავა სისხლში </option>
+				<option value="kreatinini_sisxlS"> კრეატინინი სისხლში </option>
+				<option value="koagulograma"> კოაგულოგრამა </option>
+				<option value="glukoza_sisxlSi_(uzmod"> გლუკოზა სისხლში (უზმოდ) </option>
+				<option value="RviZlis_funqciuri_sinjebi"> ღვიძის ფუნქციული სინჯები </option>
+				<option value="transaminazebi"> ტრანსამინაზები </option>
+				<option value="antisxeulebi_kardiolipinalis"> ანტისხ. ტიტრი კარდიოლიპინალის მიმართ </option>
+				<option value="antisxeulebi_qlamidiebis"> ანტისხ. ტიტრი ქლამიდიების მიმართ </option>
+				<option value="Sardis_saerTo"> შარდის საერთო </option>
+				<option value="sklerodermia_70"> სკლეროდერმია 70 </option>
+				<option value="ANA"> ANA </option>
+				<option value="anti_ds_DNA"> anti ds DNA </option>
+				<option value="anti_CCP"> anti CCP </option>
+				</select> </td>
+		<td>	<select name="daniSnuli_gamokvlevebi6" id="daniSnuli_gamokvlevebi6" class="bold_12">
+				<option value="daniSnuli_gamokvlevebi6–––"> - - - </option>
+				<option value="usg_muxlis_saxsrebis"> უსგ–მუხლის სახსრების </option>
+				<option value="sisxlis_saerTo_analizi"> სისხლის საერთო ანალიზი </option>
+				<option value="C_reaqtiuli_cila"> C-რეაქტიული ცილა </option>
+				<option value="antistreptolizini-O"> ანტისტრეპტოლიზინი-O </option>
+				<option value="revmatoiduli_faqtori"> რევმატოიდული ფაქტორი </option>
+				<option value="SardmJava_sisxlSi"> შარდმჟავა სისხლში </option>
+				<option value="kreatinini_sisxlS"> კრეატინინი სისხლში </option>
+				<option value="koagulograma"> კოაგულოგრამა </option>
+				<option value="glukoza_sisxlSi_(uzmod"> გლუკოზა სისხლში (უზმოდ) </option>
+				<option value="RviZlis_funqciuri_sinjebi"> ღვიძის ფუნქციული სინჯები </option>
+				<option value="transaminazebi"> ტრანსამინაზები </option>
+				<option value="antisxeulebi_kardiolipinalis"> ანტისხ. ტიტრი კარდიოლიპინალის მიმართ </option>
+				<option value="antisxeulebi_qlamidiebis"> ანტისხ. ტიტრი ქლამიდიების მიმართ </option>
+				<option value="Sardis_saerTo"> შარდის საერთო </option>
+				<option value="sklerodermia_70"> სკლეროდერმია 70 </option>
+				<option value="ANA"> ANA </option>
+				<option value="anti_ds_DNA"> anti ds DNA </option>
+				<option value="anti_CCP"> anti CCP </option>
+				</select> </td>
+	</tr>
+
+</table>
+
+<textarea name="saWiro_klinikuri_gamokvlevebi" id="saWiro_klinikuri_gamokvlevebi" cols="90" rows="1" autoResize style="overflow:hidden" class="bold_12"> </textarea>
+</td> </tr>
+
+
+
+
+
+<tr> <td valign="top" class="bold_13">
+კლინიკური გამოკვლევის შედეგების ინტერპრეტაცია: <font color="#0B3AF9" class="bold_20"> * </font> <br>
+<textarea name="klinikuri_gamokvlevis_Sedegebis_interpretacia" id="klinikuri_gamokvlevis_Sedegebis_interpretacia" cols="78" rows="1" autoResize style="overflow:hidden" class="normal_14"> </textarea>
+</td> </tr>
+
+<tr> <td valign="top" class="bold_13">
+&nbsp;<br/>
+ძირითადი დაავადების ICD_10 კოდი: <font color="#ff0000" class="bold_20"> * </font>
+<input  requird="" classifierid="2" type="text" name="ZiriTadi_daavadebis_ICD_kodi" id="ZiriTadi_daavadebis_ICD_kodi" size="17" class="bold_13">
+დიაგნოზის დასმის თარიღი: <input type="date" name="diagnozis_TariRi" id="diagnozis_TariRi" size="10" class="bold_13"> <br/>
+დასკვნითი დიაგნოზი: ძირითადი დაავადება: <font color="#0B3AF9" class="bold_20"> * </font> <font color="#ff0000" class="bold_20"> * </font> <br>
+<textarea classifiername="2" name="ZiriTadi_daavadeba" id="ZiriTadi_daavadeba" cols="78" rows="1" autoResize style="overflow:hidden" class="normal_14"> </textarea>
+</td> </tr>
+
+<tr> <td valign="top" class="bold_13">
+&nbsp;<br/>
+თანმხლები დაავადების ICD-10 კოდი: <font color="#0B3AF9" class="bold_20"> * </font> <input classifierid="3" type="text" name="Tanxmlebi_daavadebis_ICD_kodi" id="Tanxmlebi_daavadebis_ICD_kodi" size="61" class="bold_13"> <br/>
+თანმხლები დაავადება (დაავადებები):  <font color="#0B3AF9" class="bold_20"> * </font> <br>
+<textarea classifiername="3" name="Tanxmlebi_daavadeba" id="Tanxmlebi_daavadeba" cols="78" rows="1" autoResize style="overflow:hidden" class="normal_14"> </textarea>
+</td> </tr>
+
+<tr> <td valign="top" class="bold_13">
+&nbsp;<br/>
+გართულებების ICD_10 კოდი: <font color="#0B3AF9" class="bold_20"> * </font> <font color="#ff0000" class="bold_20"> * </font>
+<input classifierid="4" type="text" name="garTulebebis_ICD_kodi" id="garTulebebis_ICD_kodi" size="67" class="bold_13"> &nbsp; <br/>
+გართულებები: <font color="#0B3AF9" class="bold_20"> * </font> <font color="#ff0000" class="bold_20"> * </font> <br>
+<textarea classifiername="4" name="garTulebebi" id="garTulebebi" cols="78" rows="1" autoResize style="overflow:hidden" class="normal_14"> </textarea>
+</td> </tr>
+
+<tr> <td valign="top" class="bold_13">
+&nbsp;<br/>
+სიცოცხლეში პირველად დადგენილი დაავადების ხასიათი: <font color="#ff0000" class="bold_20"> * </font>
+<select  requird="" name="sicocxleSi_pirvelad_dadgenili_daavadebis_xasiaTi" id="sicocxleSi_pirvelad_dadgenili_daavadebis_xasiaTi" class="bold_13">
+<option value=""></option>
+<option value="mwvave"> მწვავე </option>
+<option value="qronikuli"> ქრონიკული </option>
+</select>
+</td> </tr>
+
+
+<tr> <td valign="top" class="bold_13">
+&nbsp;<br/>
+დანიშნული მკურნალობა და შრომითი რეკომენდაციები: <font color="#0B3AF9" class="bold_20"> * </font> <br>
+<textarea name="daniSnuli_mkurnaloba" id="daniSnuli_mkurnaloba" cols="78" rows="1" autoResize style="overflow:hidden" class="normal_14"> </textarea>
+</td> </tr>
+
+
+<tr> <td valign="top" class="bold_13">
+<div my-print="recipe">
+<table width="623" border="1" cellspacing="1" cellpadding="1">
+  <tr>
+    <td width="51"> <div align="center">N</div></td>
+    <td width="559" colspan="2" align="center"> <div > დანიშნულება </div> <br/>
+    <img width="25%" id="elrec_barcode_image" AutoSave elrec-barcode />
+    </td>
+  </tr>
+  <tr>
+    <td height="35"><div align="center">1.</div></td>
+    <td>	<textarea name="textarea2" cols="60" rows="2" id="textarea2" autoResize></textarea>	</td>
+	<td>	<input type="button" class="no-print" value="რეცეპტის გამოწერა" btn-recipe="textarea2"/> 	</td>
+  </tr>
+  <tr>
+    <td height="32"><div align="center">2.</div></td>
+    <td>	<textarea name="textarea3" cols="60" rows="2" id="textarea3" autoResize></textarea>	</td>
+	<td>	<input type="button" class="no-print" value="რეცეპტის გამოწერა" btn-recipe="textarea3"/>	</td>
+  </tr>
+  <tr>
+    <td height="29"><div align="center">3.</div></td>
+    <td>	<textarea name="textarea7" cols="60" rows="2" id="textarea7" autoResize></textarea>	</td>
+	<td>	<input type="button" class="no-print" value="რეცეპტის გამოწერა" btn-recipe="textarea7"/>	</td>
+  </tr>
+  <tr>
+    <td height="29"><div align="center">4.</div></td>
+    <td>	<textarea name="textarea4" cols="60" rows="2" id="textarea4" autoResize></textarea>	</td>
+	<td>	<input type="button" class="no-print" value="რეცეპტის გამოწერა" btn-recipe="textarea4"/>	</td>
+  </tr>
+  <tr>
+    <td height="29"><div align="center">5.</div></td>
+    <td>	<textarea name="textarea6" cols="60" rows="2" id="textarea6" autoResize></textarea>	</td>
+	<td>	<input type="button" class="no-print" value="რეცეპტის გამოწერა" btn-recipe="textarea6"/>	</td>
+  </tr>
+  <tr>
+    <td height="34"><div align="center">6.</div></td>
+    <td>	<textarea name="textarea5" cols="60" rows="2" id="textarea5" autoResize></textarea>	</td>
+	<td>	<input type="button" class="no-print" value="რეცეპტის გამოწერა" btn-recipe="textarea5"/>	</td>
+  </tr>
+  <tr>
+    <td height="26"><div align="center">7.</div></td>
+    <td>	<textarea name="textarea" cols="60" rows="2" id="textarea" autoResize></textarea>	</td>
+	<td>	<input type="button" class="no-print" value="რეცეპტის გამოწერა" btn-recipe="textarea"/>	</td>
+  </tr>
+    <tr>
+    <td height="26"><div align="center">8</div></td>
+    <td>	<textarea  id="daniSuli_medikamenti_8" name="daniSuli_medikamenti_8" cols="60" rows="2" autoResize></textarea>	</td>
+	<td>	<input type="button" class="no-print" value="რეცეპტის გამოწერა" btn-recipe="textarea"/>	</td>
+  </tr>
+    <tr>
+    <td height="26"><div align="center">9</div></td>
+    <td>	<textarea  id="daniSuli_medikamenti_9" name="daniSuli_medikamenti_9" cols="60" rows="2" autoResize></textarea>	</td>
+	<td>	<input type="button" class="no-print" value="რეცეპტის გამოწერა" btn-recipe="textarea"/>	</td>
+  </tr>
+    <tr>
+    <td height="26"><div align="center">10</div></td>
+    <td>	<textarea  id="daniSuli_medikamenti_10" name="daniSuli_medikamenti_10" cols="60" rows="2" autoResize></textarea>	</td>
+	<td>	<input type="button" class="no-print" value="რეცეპტის გამოწერა" btn-recipe="textarea"/>	</td>
+  </tr>
+</table>
+		<tr>	<td  align="right">
+		<input type="button" value="Print recept" class="no-print" print-tag="[my-print=recipe]" />
+		</td>	</tr>
+      	</div>
+</td> </tr>
+
+<tr> <td valign="top" class="bold_13">
+ამბულატორიაში (კლინიკაში ადგილზე) ჩატარებული მკურნალობა: <font color="#0B3AF9" class="bold_20"> * </font> <br>
+<textarea name="ambulatoriaSi_Catarebuli_mkurnaloba" id="ambulatoriaSi_Catarebuli_mkurnaloba" cols="78" rows="1" autoResize style="overflow:hidden" class="normal_14"> </textarea>
+</td> </tr>
+
+<tr> <td valign="top" class="bold_13">
+ქირურგიული ოპერაციები: <font color="#ff0000" class="bold_20"> * </font>
+<select name="qirurgiuli_operaciebi" id="qirurgiuli_operaciebi" class="bold_13">
+<option value=""></option>
+<option value="glaukoma">1 -- გლაუკომა </option>
+<option value="kataraqta">2 -- კატარაქტა </option>
+<option value="sxva_operaciebi_Tvalze_da_mis_danamatebze">3 -- სხვა ოპერაციები თვალზე და მის დანამატებზე </option>
+<option value="adenoideqtomia">4 -- ადენოიდექტომია </option>
+<option value="sxva_operaciebi_yel-yur-cxviris_organoebze">5 -- სხვა ოპერაციები ყელ ყურის ცხვირის ორგანოებზე </option>
+<option value="operaciebi_tuCisa_da_piris_Rrus_organoebze">6 -- ოპერაციები ტუჩისა და პირის ღრუს ორგანოებზე </option>
+<option value="operaciebi_sisxlZarRvebze">7 -- ოპერაციები სისხლძარღვებზე </option>
+<option value="hernioplastika_araCaWedili_Tiaqris_gamo">8 -- ჰერნიოპლასტიკა არაჩაჭედილი თიაქრის გამო </option>
+<option value="sxva_operaciebi_muclis_Rrus_organoebze">9 -- სხვა ოპერაციები მუცლის ღრუს ორგანოებზე </option>
+<option value="saSvilosnos_gamofxeka_abortis_gareSe">10 -- საშვილოსნოს გამოფხეკა აბორტის გარეშე </option>
+<option value="sxva_operaciebi_qalis_sasqeso_organoebze">11 -- სხვა ოპერაციები ქალის სასქესო ორგანოებზე </option>
+<option value="aborti_(xelovnuri)_mini_abortis_gareSe">12 -- აბორტი (ხელოვნური) მინი-აბორტის გარეშე </option>
+<option value="mini-aborti_(5_kviramde)">13 -- მინი-აბორტი (5 კვირამდე) </option>
+<option value="sxva_sameano-ginekologiuri_operaciebi">14 -- სხვა სამეანო-გინეკოლოგიური ოპერაციები </option>
+<option value="sxva_operaciebi_Sard-sasqeso_sistemis_organoebze">15 -- სხვა ოპერაციები შარდ-სასქესო სისტემის ორგანოებზე </option>
+<option value="operaciebi_Zval-kunTovan_sistemaze">16 -- ოპერაციები ძვალ-კუნთოვან სისტემაზე </option>
+<option value="operaciebi_sarZeve_jirkvalze">17 -- ოპერაციები სარძევე ჯირკვალზე</option>
+<option value="operaciebi_kansa_da_kanqveSa_qsovilze">18 -- ოპერაციები კანსა და კანქვეშა ქსოვილზე </option>
+<option value="limfuri_kvanZebis_amokveTa(izolirebulad)">19 -- ლიმფური კვანძების ამოკვეთა (იზოლირებულად) </option>
+<option value="sxva_mcire_qirurgiuli_operaciebi">20 -- სხვა მცირე ქირურგიული ოპერაციები </option>
+<option value="plastikuri_operaciebi">21 -- პლასტიკური ოპერაციები </option>
+</select>
+</td> </tr>
+
+
+
+
+
+
+<tr valign="top">
+	<td  valign="top" class="bold_13" >
+	&nbsp;<br/>
+	შემდგომი ვიზიტი: <input type="text" name="Semdgomi_viziti" id="Semdgomi_viziti" size="79" align="middle" class="bold_12">
+	</td>
+</tr>
+
+
+
+
+</table>
+</td> </tr>
+
+
+
+
+
+
+<tr class="normal_15"> <td>
+&nbsp;<br/>
+<strong> ექიმი: <input type="text" name="eqimis_gvari_da_saxeli" id="eqimis_gvari_da_saxeli" size="25" align="middle" class="bold_12"> </strong>
+&nbsp; &nbsp;
+<strong> ექ.ტელ.: <input type="text" name="eqimis_tel.N" id="eqimis_tel.N" size="15" align="middle" class="bold_12"> </strong>
+&nbsp;&nbsp;
+<strong>ხელმოწერა: ------------------</strong>
+</td> </tr>
+
+</table>
+
+
+
+
+</form>
+
+</body>
+
+</html>
