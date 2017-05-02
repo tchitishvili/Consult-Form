@@ -4,8 +4,13 @@
 <title>Consultation Form</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/i18n/en.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
 </head>
 
 <body>
@@ -70,8 +75,204 @@
 					</div>
 				</div>
 			</section>
+
+			<section>
+				<div class="form-group row">
+					<div class="col">
+						<label>
+							პაც.სქესი:
+						</label>
+						<select name="pacientis_sqesi" id="pacientis_sqesi" class="bold_13">
+							<option value=""></option>
+							<option value="mamrobiTi"> მამრობითი </option>
+							<option value="mdedrobiTi"> მდედრობითი </option>
+						</select>
+					</div>
+					<div class="col">
+						<label>
+							ოჯახ.მდგომარეობა:
+						</label>
+						<select name="ojaxuri_mdgomareoba" id="ojaxuri_mdgomareoba" class="bold_13">
+							<option value="ojaxuri_mdgomareoba"></option>
+							<option value="dasaojaxebeli"> დასაოჯახებელი </option>
+							<option value="daojaxebuli"> დაოჯახებული </option>
+							<option value="ganqorwinebuli"> განქორწინებული </option>
+							<option value="qvrivi"> ქვრივი </option>
+						</select>
+					</div>
+					<div class="col">
+						<label>
+							 შემთხვევის ტიპი:
+						</label>
+						<select name="SemTxvevis_tipi" id="SemTxvevis_tipi" class="bold_13">
+							<option value=""></option>
+							<option value="gegmiuri"> გეგმიური </option>
+							<option value="gadaudebeli"> გადაუდებელი </option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label>
+						პროფესია, სამუშაო ადგილი და თანამდებობა: *
+					</label>
+					<textarea class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<label>
+						მომართვის ძირითადი მიზეზის, ჩივილის ICPC2 კოდი:
+					</label>
+					<textarea class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<label>
+						მომართვის ძირითადი მიზეზი, ჩივილი:
+					</label>
+					<textarea class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<label>
+						მომართვის სხვა მიზეზები, ჩივილები:
+					</label>
+					<textarea class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<label>
+						დაავადების ანამნეზი:
+					</label>
+					<textarea class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<label>
+						გადატანილი დაავადებები:
+					</label>
+					<textarea class="form-control"></textarea>
+				</div>
+				<div class="form-group row justify-content-end">
+					<div class="col-3">
+						<label>
+							ტრავმის შემთხვევაში გარეგანი მიზეზის ICD_10 კოდი:
+						</label>
+						<input classifierid="1" type="text" class="form-control" name="travmis_SemTxvevaSi_garegani_mizezis_ICD10_kodi" id="travmis_SemTxvevaSi_garegani_mizezis_ICD10_kodi" size="43" class="normal_14">
+					</div>
+				</div>
+				<div class="form-group">
+					<label>
+						ტრავმის შემთხვევაში გარეგანი მიზეზი:
+					</label>
+					<textarea class="form-control"></textarea>
+				</div>
+			</section>
+			<hr>
+			<section>
+				<div class="form-group">
+					<label>
+						ობიექტურად:
+					</label>
+					<textarea class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<label>
+						წინასწარი დიაგნოზი:
+					</label>
+					<textarea class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<label>
+						კლინიკური დიაგნოზი:
+					</label>
+					<textarea class="form-control"></textarea>
+				</div>
+				<div class="form-group row">
+					<div class="col-6">
+						<label>
+							დანიშნული გამოკვლევების რაოდენობა:
+						</label>
+						<select id="examination-count">
+							<option value=""></option>
+							<option value="1">1</option>
+							<option value="2"> 2</option>
+						</select>
+					</div>
+
+					<div class="examination" data-id="1" style="display: none;">
+						<select disabled="disabled">
+							<option value=""></option>
+							<option value="1">1</option>
+							<option value="2"> 2</option>
+						</select>
+					</div>
+
+				</div>
+			</section>
 		</form>
 	</div>
 </body>
+
+<script type="text/javascript">
+	$(function() {
+ 		$('select').select2();
+
+		$('#examination-count').on('change', function() {
+	        var item = $(this);
+	        var value = parseInt(item.val());
+
+	        $('.order-form .container-input, .order-form .container-input .container-input-area').hide();
+	        $('.order-form .container-input .container-input-area').prop('disabled', true);
+
+	        if(value) {
+	            for(var i = 1; i <= value; i++) {
+	                var selectBox = $('form .examination[data-id="'+ i +'"]');
+	                selectBox.prop('disabled', false);
+	                var cont = selectBox.parents('.form-group').find('.examination select');
+	                cont.show();
+	                selectBox.show();
+	            }
+	        }
+
+	        var selectBox = $('form .examination[data-id="'+ i +'"]');
+	        selectBox.prop('disabled', true);
+	        selectBox.val('');
+
+
+	    });
+	});
+</script>
+
+<style type="text/css">
+	.select2-container {
+		width: 100% !important;
+	}
+	.select2-container .select2-selection--single {
+		display: block;
+		padding: .5rem .75rem;
+		font-size: 1rem;
+		line-height: 1.25;
+		height: 38px;
+		color: #464a4c;
+		background-color: #fff;
+		background-image: none;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		border: 1px solid rgba(0,0,0,.15);
+		border-radius: .25rem;
+		-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+		-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__arrow {
+		top: 6px;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__rendered {
+		line-height: 1.2;
+	}
+
+
+	hr {
+		margin: 50px 0px;
+		border-top: 1px solid rgba(0,0,0,.2);
+	}
+</style>
 
 </html>
